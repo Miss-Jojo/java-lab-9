@@ -5,7 +5,7 @@ public class CompareBinaryFiles {
 
     public static void main(String[] args) {
 
-        // Specify file paths directly (as required)
+        
         String file1 = "fileA.bin";
         String file2 = "fileB.bin";
 
@@ -20,12 +20,12 @@ public class CompareBinaryFiles {
                 byte1 = f1.read();
                 byte2 = f2.read();
 
-                // If both reach end → equal
+               
                 if (byte1 == -1 && byte2 == -1) {
                     break;
                 }
 
-                // If bytes differ
+                
                 if (byte1 != byte2) {
                     equal = false;
                     System.out.println(
