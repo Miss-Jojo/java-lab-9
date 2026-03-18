@@ -21,7 +21,7 @@ class StudentFileProgram {
             int marks = sc.nextInt();
             sc.nextLine();
 
-            // ❌ ONLY ERROR: file does not exist
+           
             String fileName = "abc.txt";
 
             FileWriter fw = new FileWriter(fileName);
@@ -37,7 +37,7 @@ class StudentFileProgram {
             bw.newLine();
             bw.close();
 
-            // ❌ Error occurs here if file is missing
+         
             FileReader fr = new FileReader("nonexistingfile.txt");
             BufferedReader br = new BufferedReader(fr);
 
