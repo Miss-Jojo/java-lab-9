@@ -19,7 +19,7 @@ class FileStatistics {
             String line;
 
             while ((line = br.readLine()) != null) {
-                lines++;                         // correct line count
+                lines++;                        
                 characters += line.length();
 
                 String w[] = line.trim().split("\\s+");
