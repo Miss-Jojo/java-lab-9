@@ -14,13 +14,13 @@ class FileCopyProgram_Fixed {
 
             File srcFile = new File(source);
 
-            // ✅ Fix: check file validity
+          
             if (!srcFile.exists() || !srcFile.isFile()) {
                 System.out.println("Source file is invalid.");
                 return;
             }
 
-            // -------- Character Stream --------
+            
             FileReader fr = new FileReader(srcFile);
             FileWriter fw = new FileWriter(dest);
 
@@ -32,7 +32,7 @@ class FileCopyProgram_Fixed {
             fr.close();
             fw.close();
 
-            // -------- Byte Stream --------
+            
             FileInputStream fis = new FileInputStream(source);
             FileOutputStream fos = new FileOutputStream(dest, true);
 
